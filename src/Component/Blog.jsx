@@ -66,7 +66,7 @@ const Blog = () => {
             <img src="../public/first.jpg" className=" w-full lg:h-56 rounded-md hover:scale-125 duration-500" alt="" />
           </div>
           <div className="headings mb-3">
-            <h1 className="text-xl text-orange-400    font-semibold">
+            <h1 className="text-xl text-red-700 font-Jost   font-semibold">
               Web Development
             </h1>
           </div>
@@ -88,7 +88,7 @@ const Blog = () => {
             <img src="../public/secondj.jpg" className=" w-full hover:scale-125 duration-500 ease-linear  lg:h-56 rounded-md" alt="" />
           </div>
           <div className="headings mb-3">
-            <h1 className="text-xl text-orange-400 font-semibold">Branding</h1>
+            <h1 className="text-xl text-red-700 font-Jost font-semibold">Branding</h1>
           </div>
           <div className="para">
             <p className=" font-JosefinSans">
@@ -108,7 +108,7 @@ const Blog = () => {
             <img src="../public/thirdj.jpg" className=" w-full hover:scale-125 duration-500 ease-in lg:h-56 rounded-md" alt="" />
           </div>
           <div className="headings mb-3">
-            <h1 className="text-xl text-orange-400  font-semibold">Social Media</h1>
+            <h1 className="text-xl text-red-700 font-Jost  font-semibold">Social Media</h1>
           </div>
           <div className="para">
             <p className=" font-JosefinSans">

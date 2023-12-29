@@ -151,7 +151,7 @@ const Gridcontainer = () => {
             </h1>
           </div>
           <div className="third-para mb-3  lg:text-start text-center">
-            <p className=" text-gray-500 font-JosefinSans">
+            <p className="  font-JosefinSans">
               Most common methods for designing websites that work <br /> well
               on desktop is responsive and adaptive design
             </p>
@@ -267,7 +267,7 @@ const Gridcontainer = () => {
             transition={{ duration: 2.0, ease: "easeIn" }}
             exit={{ opacity: 0, x: 40 }}
           >
-            <SiAntdesign className=" md:text-4xl text-2xl" />
+            <SiAntdesign className=" md:text-4xl lg:block hidden text-2xl" />
           </motion.div>
           <div className="heading">
             <h1 className="md:text-2xl text-xl  font-semibold  font-Jost">
@@ -299,7 +299,7 @@ const Gridcontainer = () => {
             transition={{ duration: 2.0, ease: "easeIn" }}
             exit={{ opacity: 0, x: 40 }}
           >
-            <SiAnydesk className=" md:text-4xl text-2xl" />
+            <SiAnydesk className=" md:text-4xl lg:block hidden text-2xl" />
           </motion.div>
           <div className="heading">
             <h1 className="md:text-2xl text-xl font-semibold  font-Jost">
@@ -331,7 +331,7 @@ const Gridcontainer = () => {
             transition={{ duration: 2.0, ease: "easeIn", delay: 0.2 }}
             exit={{ opacity: 0, x: 40 }}
           >
-            <IoLogoApple className=" md:text-4xl text-xl" />
+            <IoLogoApple className=" md:text-4xl lg:block hidden text-xl" />
           </motion.div>
           <div className="heading">
             <h1 className="md:text-2xl text-xl  font-semibold font-Jost">UI/UX Design</h1>
@@ -361,7 +361,7 @@ const Gridcontainer = () => {
             transition={{ duration: 2.3, ease: "easeIn", delay: 0.2 }}
             exit={{ opacity: 0, x: 40 }}
           >
-            <IoLogoReact className=" text-4xl" />
+            <IoLogoReact className=" text-4xl lg:block hidden" />
           </motion.div>
           <div className="heading">
             <h1 className="md:text-2xl text-xl  font-Jost font-semibold">Web Design</h1>

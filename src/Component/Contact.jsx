@@ -69,14 +69,14 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Enter your name"
-                    className=" w-full  px-6 py-2 rounded-lg outline-none border-2  border-gray-400 "
+                    className=" w-full  px-6 py-2 rounded-lg font-Jost outline-none border-2  border-gray-400 "
                   />
                 </div>
                 <div className="second-input mb-3">
                   <input
                     type="text"
                     placeholder=" your email"
-                    className=" px-6 py-2 rounded-lg w-full outline-none border-2  border-gray-400"
+                    className=" px-6 py-2 rounded-lg font-Jost  w-full outline-none border-2  border-gray-400"
                   />
                 </div>
               </div>
@@ -85,14 +85,14 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder=" your phone"
-                    className="w-full  px-6 py-2 rounded-lg outline-none border-2  border-gray-400"
+                    className="w-full  px-6 py-2 rounded-lg font-Jost outline-none border-2  border-gray-400"
                   />
                 </div>
                 <div className="first-second-inputfield mb-3">
                   <input
                     type="text"
                     placeholder=" your Subject"
-                    className="w-full  px-6 py-2 rounded-lg outline-none border-2  border-gray-400"
+                    className="w-full  px-6 py-2 rounded-lg font-Jost outline-none border-2  border-gray-400"
                   />
                 </div>
               </div>
@@ -140,11 +140,11 @@ const Contact = () => {
       <div className="footer-container p-8 bg-cyan-50 md:text-start text-center ">
         <div className="items md:flex justify-between items-center gap-10">
             <div className="first-section">
-              <h1 className=" font-Poppins">Developed with love by <span className=" text-gray-400 font-bold">Marketify </span> © 2022</h1>
+              <h1 className=" font-Poppins">Developed with love by <span className=" text-purple-700 font-bold">Marketify </span> © <span className=" text-red-700 font-bold font-Jost">2022</span></h1>
             </div>
             <div className="second-section md:flex gap-9 p-8 font-Jost">
-              <h1>Terms & Condition</h1>
-              <h2> Privacy Policy</h2>
+              <h1>Terms & <span className=" text-red-700 font-bold">Condition</span> </h1>
+              <h2> Privacy <span className=" text-red-700 font-bold">Policy</span></h2>
             </div>
         </div>
       </div>

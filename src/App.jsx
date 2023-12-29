@@ -20,34 +20,8 @@ const App = () => {
           <Route path="/services" element={<Service />} />
         </Routes>
       </AnimatePresence>
-      <AnimatedCursor
-      innerSize={8}
-      outerSize={35}
-      innerScale={1}
-      color='193, 11, 111'
-      outerScale={1.7}
-      outerAlpha={0}
-      outerStyle={{
-        border: '3px solid var(--cursor-color)'
-      }}
-      innerStyle={{
-        backgroundColor: 'var(--cursor-color)'
-      }}
-      clickables={[
-        'a',
-        'input[type="text"]',
-        'input[type="email"]',
-        'input[type="number"]',
-        'input[type="submit"]',
-        'input[type="image"]',
-        'label[for]',
-        'select',
-        'textarea',
-        'button',
-        '.link'
-      ]}
-    
-      />
+     
+      
     </>
   );
 };
