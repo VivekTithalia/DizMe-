@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, {  useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
@@ -8,6 +8,7 @@ import { useState } from "react";
 const Nav = () => {
   const [toggle, setToggle] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+
 
   const change = () => {
     if (toggle === false) {
@@ -28,9 +29,17 @@ const Nav = () => {
     };
   }, []);
 
+  const changetoggle=()=>{
+    mycontext.setdark(true)
+   }
+
   return (
     <>
-      <header className={`  md:p-0  top-0  p-4 fixed z-20 duration-200  ease-linear bg-white w-full ${scrolling ? "bg-white shadow-md":"md:bg-transparent "}  ` }>
+      <header
+        className={`  md:p-0  top-0  p-4 fixed z-20 duration-200  ease-linear bg-white w-full ${
+          scrolling ? "bg-white shadow-md" : "md:bg-transparent "
+        }  `}
+      >
         <div className="  flex    justify-between  md:px-16  items-center  ">
           <div className="logo">
             <img src="../public/logo.png" className=" w-20" alt="" />
@@ -38,13 +47,19 @@ const Nav = () => {
           <div className="links hidden md:block ">
             <ul className="flex  gap-10 p-4 items-center ">
               <li>
-                <NavLink className="font-Jost  font-[600]" to="/">Home</NavLink>
+                <NavLink className="font-Jost  font-[600]" to="/">
+                  Home
+                </NavLink>
               </li>
               <li>
-                <NavLink className="font-Jost font-[600]" to="/about" >About</NavLink>
+                <NavLink className="font-Jost font-[600]" to="/about">
+                  About
+                </NavLink>
               </li>
               <li>
-                <NavLink className=" font-Jost font-[600]" to="/services">Services</NavLink>
+                <NavLink className=" font-Jost font-[600]" to="/services">
+                  Services
+                </NavLink>
               </li>
               <li className=" font-Jost font-[600]"> Blog</li>
               <div className="btn">
@@ -52,6 +67,7 @@ const Nav = () => {
                   Download Cv
                 </button>
               </div>
+            
             </ul>
           </div>
           <div className="burgermenulogo md:hidden block">
@@ -91,9 +107,6 @@ const Nav = () => {
           </div>
         </div>
       </header>
-     
-      
-     
     </>
   );
 };
