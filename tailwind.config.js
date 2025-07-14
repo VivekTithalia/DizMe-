@@ -8,16 +8,27 @@ export default {
     extend: {
      
       backgroundImage:{
-        'bg-one':'url("public/background.jpg")'
+        'bg-one':'url("./background.jpg")',
+        'bg-dark':'url("./darkbg.jpg")'
       },
       fontFamily:{
         Poppins:["Poppins"],
         JosefinSans:["Josefin Sans"],
-        Jost:["Jost"]
+        Jost:["Jost"],
+        Playfair:["Playfair Display"]
         
 
-      }
+      },
+      screens: {
+        'md':'1025px',
+        'lg':'1240px',
+        '2xl': '1920px', 
+       
+      },
     },
   },
-  plugins: [],
+  plugins: [
+
+    require('flowbite/plugin')
+  ],
 }

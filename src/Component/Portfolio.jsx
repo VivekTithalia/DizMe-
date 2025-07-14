@@ -2,6 +2,7 @@ import React from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useRef } from "react";
+import Gridcontainer from "./Gridcontainer";
 
 const Portfolio = () => {
   const ref = useRef(null);
@@ -17,9 +18,9 @@ const Portfolio = () => {
   return (
     <>
       <div
-        className="main-container flex flex-col justify-center items-center relative  p-6 gap-x-5 mx-auto text-center mb-3"
+        className="main-container flex flex-col justify-center items-center relative  md:p-3 gap-x-5 mx-auto text-center mb-3"
         ref={ref}
-      >
+       id="portfolio">
         <motion.div
           className="items "
           variants={{
@@ -64,6 +65,7 @@ const Portfolio = () => {
         >
           <img src="../public/scale2img.png" alt="" />
         </motion.div>
+      <Gridcontainer />
       </div>
     </>
   );

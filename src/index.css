@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* html{
+  scroll-behavior: smooth !important;
+} */
 
 
 
@@ -14,11 +17,11 @@ li a.active{
     font-weight: 500;
 
 }
-.home-container{
+/* .home-container{
   background-image: url('../public/background.jpg');
   background-size: cover;
   background-position: center;
-}
+} */
 html {
   --cursor-color: #ff0000;
 }
@@ -34,4 +37,22 @@ html.dark-mode {
   .react-multi-carousel-dot button{
     border-color: #e16c6c !important;
     border-width: 1px !important;
+  }
+
+  .myicons{
+    animation: nothing  linear 4s  infinite alternate;
+  }
+  /* .myimage{
+    width: 70% !important;
+  } */
+
+  @keyframes nothing {
+    0% {
+      transform: translateY(0);
+  }
+  
+  30% {
+      transform: translateY(-60px);
+  }
+    
   }

@@ -15,8 +15,8 @@ const Blog = () => {
   }, [isinview]);
   return (
     <>
-    
-      <div className="top relative " ref={ref}>
+     <div className="blog-main-container w-full h-full lg:min-h-screen mt-3" id="blog">
+     <div className="top relative " ref={ref}>
         <div className="blogheadings-container flex flex-col justify-center items-center text-center ">
           <div className="headingitems mb-3 ">
             <h2 className="text-2xl text-red-700 font-JosefinSans  font-semibold">From My Blog</h2>
@@ -38,7 +38,7 @@ const Blog = () => {
             transition={{ duration: 1.5, ease: "easeIn", delay: 0.3 }}
             exit={{ opacity: 0, scale: 0 }}
           >
-            <img src="../public/scaleimg3.png" alt="" srcset="" />
+            <img src=".././scaleimg3.png" alt="" srcset="" />
           </motion.div>
           <motion.div
             className="second img-container absolute top-0 left-10 lg:block hidden"
@@ -56,14 +56,14 @@ const Blog = () => {
             }}
             exit={{ opacity: 0, scale: 0 }}
           >
-            <img src="../public/scaleimg4.png" alt="" />
+            <img src=".././scaleimg4.png" alt="" />
           </motion.div>
         </div>
       </div>
       <div className="grid-img-container grid lg:grid-cols-3  max-w-[1200px] md:text-start text-center mx-auto items-center gap-6 p-8   ">
         <div className="items-container  relative">
           <div className="forimg  overflow-hidden">
-            <img src="../public/first.jpg" className=" w-full lg:h-56 rounded-md hover:scale-125 duration-500" alt="" />
+            <img src=".././first.jpg" className=" w-full lg:h-56 rounded-md hover:scale-125 duration-500" alt="" />
           </div>
           <div className="headings mb-3">
             <h1 className="text-xl text-red-700 font-Jost   font-semibold">
@@ -85,7 +85,7 @@ const Blog = () => {
         </div>
         <div className="items-container relative">
           <div className="forimg overflow-hidden ">
-            <img src="../public/secondj.jpg" className=" w-full hover:scale-125 duration-500 ease-linear  lg:h-56 rounded-md" alt="" />
+            <img src=".././secondj.jpg" className=" w-full hover:scale-125 duration-500 ease-linear  lg:h-56 rounded-md" alt="" />
           </div>
           <div className="headings mb-3">
             <h1 className="text-xl text-red-700 font-Jost font-semibold">Branding</h1>
@@ -105,7 +105,7 @@ const Blog = () => {
         </div>
         <div className="items-container relative">
           <div className="forimg overflow-hidden">
-            <img src="../public/thirdj.jpg" className=" w-full hover:scale-125 duration-500 ease-in lg:h-56 rounded-md" alt="" />
+            <img src=".././thirdj.jpg" className=" w-full hover:scale-125 duration-500 ease-in lg:h-56 rounded-md" alt="" />
           </div>
           <div className="headings mb-3">
             <h1 className="text-xl text-red-700 font-Jost  font-semibold">Social Media</h1>
@@ -124,6 +124,8 @@ const Blog = () => {
           </div>
         </div>
       </div>
+     </div>
+   
     </>
   );
 };
